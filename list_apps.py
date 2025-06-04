@@ -1,7 +1,12 @@
 import os
 import platform
-import tkinter as tk
-from tkinter import ttk
+try:
+    import tkinter as tk
+    from tkinter import ttk
+except ModuleNotFoundError as e:
+    raise SystemExit(
+        "tkinter is required to run this script. Install Python with Tk support"
+    ) from e
 
 try:
     import winreg
