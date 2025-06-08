@@ -12,3 +12,11 @@ python list_apps.py
 
 A window will appear listing all discovered applications. On unsupported
 platforms the list may be empty.
+
+
+You can also launch the Electron interface. From the `electron-app` directory install dependencies and run:
+
+```bash
+npm install
+npm start
+```

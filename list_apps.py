@@ -1,5 +1,7 @@
 import os
 import platform
+import sys
+import json
 import tkinter as tk
 from tkinter import ttk
 
@@ -64,6 +66,10 @@ def get_installed_apps():
 
 def main():
     apps = get_installed_apps()
+    if "--json" in sys.argv:
+        print(json.dumps(apps))
+        return
+
 
     root = tk.Tk()
     root.title('Installed Applications')
