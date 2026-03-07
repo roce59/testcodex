@@ -1,0 +1,7 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+psutil>=5.9
+# Windows service support (optional, Windows only)
+pywin32>=306; sys_platform == "win32"
+# Packaging to .exe (dev only)
+pyinstaller>=6.0; extra == "build"
